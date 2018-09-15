@@ -36,12 +36,13 @@ HTML:
 
 CSS/[SASS](https://github.com/webpack-contrib/sass-loader):
 
-- npm i -D css-loader style-loader sass-loader node-sass postcss-loader autoprefixer extract-text-webpack-plugin
+- npm i -D css-loader style-loader sass-loader node-sass postcss-loader autoprefixer mini-css-extract-plugin
 
 
 babel:
 
-- npm i -D babel-core babel-loader babel-preset-env babel-preset-react
+- npm i -D babel-core babel-loader babel-preset-env babel-preset-react babel-polyfill
+
 
 
 webpack:
@@ -54,12 +55,12 @@ react:
 
 TEST:
 
-- npm i -D jest enzyme enzyme-adapter-react-16
+- npm i -D jest babel-jest enzyme enzyme-adapter-react-16
 
 Настроить конфигурацию окружения:
 - .babelrc
-- webpack.config.js
 - postcss.config.js
+- webpack.config.js
 
 ### Задача: 4.
 

@@ -1,0 +1,61 @@
+{
+  "name": "mf",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode=development --open",
+    "build": "webpack --mode production"
+  },
+  "author": "Pavel Usov",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-normalize": "^7.0.1",
+    "postcss-preset-env": "^5.3.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.0",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "browserslist": [
+    "ie >= 11",
+    "last 2 versions"
+  ],
+  "postcss": {
+    "plugins": {
+      "postcss-normalize": {},
+      "postcss-preset-env": {
+        "stage": 3,
+        "browsers": [
+          "last 2 versions",
+          "ie >= 11"
+        ]
+      },
+      "autoprefixer": {}
+    }
+  }
+}
