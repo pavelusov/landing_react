@@ -48,7 +48,8 @@ module.exports = (env, argv) => {
       contentBase: path.join(__dirname, 'dist'),
       host: '0.0.0.0',
       port: 5000,
-      hot: false,
+      hot: true,
+      hotOnly: true,
       compress: true,
       publicPath: '/',
       historyApiFallback: true

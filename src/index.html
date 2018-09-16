@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>React Boilerplate</title>
+  <title>Услуги</title>
 </head>
 <body>
 <div id="app">
@@ -95,14 +95,25 @@
     <main class="page-layout__content">
       <div class="content">
         <div class="banner">
-          <div class="banner__title">Комплекс "XYZ"</div>
-          <div class="banner__description">заряди свой устройства</div>
+          <div class="banner__container">
+            <div class="banner__content">
+              <h1 class="banner__title">Услуга X <span class="text--purple">Заряди телефон</span></h1>
+              <p class="banner__description">Не нужно экономить на общении с друзьями</p>
+            </div>
+            <div class="banner__image">
+              <div class="banner__circle bg--purple animation animation-zoom"></div>
+              <div class="banner__circle bg--purple animation animation-zoom animation--delay-200"></div>
+              <div class="banner__circle bg--white animation animation-zoom animation--delay-400"></div>
+            </div>
+          </div>
         </div>
         <div class="tabs">
           <div class="tabs__list">
-            <div class="tabs__item">Услуга "X"</div>
-            <div class="tabs__item">Услуга "Y"</div>
-            <div class="tabs__item">Услуга "Z"</div>
+            <div class="tabs__item"><p>Телефон</p></div>
+            <div class="tabs__item"><p>Планшет</p></div>
+            <div class="tabs__item"><p>Телевизор</p></div>
+            <div class="tabs__item tabs__item--selected"><p>X</p></div>
+            <div class="tabs__item"><p>Z</p></div>
           </div>
         </div>
         <div class="description">
@@ -114,7 +125,7 @@
       <div class="footer">
         <div class="extra-nav">
           <div class="extra-nav__list">
-            <div class="extra-nav__item">
+            <div class="extra-nav__item extra-nav__item--open">
               <div class="extra-nav__title">Компания</div>
               <div class="extra-nav__link">
                 <a href="#">О компании</a>
@@ -142,13 +153,13 @@
         </div>
         <div class="social">
           <div class="social__list">
-            <div class="social_item">
+            <div class="social__item social__item--fb">
               fb
             </div>
-            <div class="social_item">
+            <div class="social__item social__item--vk">
               vk
             </div>
-            <div class="social_item">
+            <div class="social__item social__item--ok">
               ok
             </div>
           </div>

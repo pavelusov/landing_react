@@ -1,0 +1,24 @@
+.animation {
+  animation-duration: .7s;
+  animation-fill-mode: both;
+  &--delay-200 {
+    animation-delay: 200ms;
+  }
+  &--delay-400 {
+    animation-delay: 400ms;
+  }
+  &-zoom {
+    animation-name: zoomIn;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

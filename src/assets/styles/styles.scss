@@ -1,13 +1,42 @@
+@import "animations";
+
 // top-nav
 @import "top-nav/top-nav-styles";
 @import "top-nav/site-nav-styles";
 @import "top-nav/region-choice-styles";
 
+// page-layout
+@import "page-layout/page-layout-style";
+@import "page-layout/content-style";
+@import "page-layout/footer-style";
+@import "page-layout/mobile-menu";
+
 html {
-  font-size: 16px;
+  font: {
+    size: 16px;
+    family: Graphik,Arial,sans-serif;
+  }
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.text {
+  &--purple {
+    color: $purple
+  }
+}
+
+.bg {
+  &--green {
+    background-color: $bg-green;
+  }
+  &--purple {
+    background-color: $purple;
+  }
+  &--white {
+    background-color: #ffffff;
+  }
 }
