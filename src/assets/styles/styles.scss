@@ -2,9 +2,9 @@
 @import "media-queries";
 
 // top-nav
-@import "top-nav/top-nav-styles";
-@import "top-nav/site-nav-styles";
-@import "top-nav/region-choice-styles";
+@import "../../app/components/top-nav/TopNav/top-nav-styles";
+@import "../../app/components/top-nav/SiteNav/site-nav-styles";
+@import "../../app/components/top-nav/RegionChoice/region-choice-styles";
 
 // page-layout
 @import "page-layout/page-layout-style";
