@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../media-queries";
 
 .content {
   width: 100%;
@@ -7,10 +8,19 @@
     min-height: 300px;
     background: $bg-green;
     position: relative;
+    @include sm {
+      min-height: 270px;
+    }
+    @include md {
+      min-height: 320px;
+    }
     &__container {
       padding: 20px;
       display: flex;
       flex-direction: column;
+      @include sm {
+        padding: 0 40px;
+      }
     }
     &__content {
       color: #ffffff;
@@ -18,11 +28,18 @@
     }
     &__title {
       font-size: 2rem;
+      @include md {
+        font-size: 2.5rem;
+      }
       span {
         display: block;
       }
     }
-    &__description {}
+    &__description {
+      @include md {
+        font-size: 1.4rem;
+      }
+    }
     &__image {
       display: flex;
       justify-content: center;
@@ -46,6 +63,10 @@
       padding: 5px;
       width: 100%;
       max-width: 600px;
+      @include sm {
+        padding: 1px;
+        max-width: 1024px;
+      }
     }
     &__item {
       padding: 5px 10px;
@@ -62,6 +83,9 @@
       justify-content: center;
       align-items: center;
       font-weight: 600;
+      @include md {
+        font-size: 1rem;
+      }
       &--selected {
         border-bottom-color: $bg-green;
         color: $bg-green;
@@ -71,5 +95,8 @@
   .description {
     padding: 40px 10px;
     background: #ffffff;
+    @include sm {
+      padding: 40px 30px;
+    }
   }
 }

@@ -2,8 +2,14 @@
 
 .page-layout {
   width: 100%;
+  height: 100%;
+  max-height: calc(100% - 30px);
   &__container {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__header {
     width: 100%;
