@@ -47,7 +47,9 @@
   ],
   "postcss": {
     "plugins": {
-      "postcss-normalize": {},
+      "postcss-normalize": {
+        "forceImport": true
+      },
       "postcss-preset-env": {
         "stage": 3,
         "browsers": [

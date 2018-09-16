@@ -1,0 +1,55 @@
+@import "../variables";
+
+.region-choice {
+  $rc: &;
+  max-width: 120px;
+  position: relative;
+  &__toggle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    #{$rc}--open & {
+      color: $bg-green;
+    }
+  }
+  &__search-panel {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #ffffff;
+    z-index: 10;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+    #{$rc}--open & {
+      display: block;
+    }
+    &__input-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    &__input {
+      width: 100%;
+      border: 1px solid $bg-dark-gray;
+      padding: 5px 20px 5px 5px;
+      &:focus {
+        border-color: $bg-green;
+        outline: none;
+      }
+    }
+  }
+  &__region-list {}
+  &__region-item {
+    color: #000;
+    white-space: nowrap;
+    padding: 0 10px;
+    &:hover {
+      background: $bg-green;
+      color: #ffffff;
+    }
+    &--selected {
+      background: $bg-green;
+      color: #ffffff;
+    }
+  }
+}

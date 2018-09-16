@@ -1,0 +1,38 @@
+@import "../variables";
+
+.site-nav {
+  $sn: &;
+  position: relative;
+  &__toggle {
+    #{$sn}--open & {
+      background: $bg-light-gray;
+      color: #000;
+      padding: 0 10px;
+    }
+  }
+  &__list {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #ffffff;
+    z-index: 10;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    #{$sn}--open & {
+      display: block;
+    }
+  }
+  &__item {
+    color: #000;
+    white-space: nowrap;
+    padding: 0 15px;
+    &:hover {
+      background: $bg-green;
+      color: #ffffff;
+    }
+    &--selected {
+      background: $bg-green;
+      color: #ffffff;
+    }
+  }
+}

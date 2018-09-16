@@ -1,0 +1,11 @@
+@import "../variables";
+
+.top-nav {
+  background: $bg-dark-gray;
+  color: #ffffff;
+  font-size: 0.8125rem;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
