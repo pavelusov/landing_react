@@ -21,6 +21,13 @@
       @include sm {
         padding: 0 40px;
       }
+      @include xl {
+        margin: 0 auto;
+        max-width: 1200px;
+        flex-direction: row;
+        align-items: center;
+        height: 280px;
+      }
     }
     &__content {
       color: #ffffff;
@@ -56,6 +63,9 @@
     background: $bg-light-gray;
     display: flex;
     justify-content: center;
+    @include lg {
+      background: #ffffff;
+    }
     &__list {
       display: flex;
       justify-content: space-around;
@@ -72,7 +82,6 @@
       padding: 5px 10px;
       background: #ffffff;
       text-align: center;
-      border-bottom: 3px solid #ffffff;
       margin: 1px;
       font-size: 0.8rem;
       display: flex;
@@ -86,9 +95,24 @@
       @include md {
         font-size: 1rem;
       }
+      @include lg {
+        border-left: 1px solid $bg-light-gray;
+        margin: 0;
+        &:first-child {
+          border: none;
+        }
+        &:hover {
+          background: $bg-green;
+          color: #ffffff;
+        }
+      }
       &--selected {
-        border-bottom-color: $bg-green;
+        border-bottom: 3px solid $bg-green;
         color: $bg-green;
+        &:hover {
+          background: #ffffff;
+          color: $bg-green;
+        }
       }
     }
   }
@@ -97,6 +121,18 @@
     background: #ffffff;
     @include sm {
       padding: 40px 30px;
+    }
+    @include lg {
+      background-color: $bg-light-gray;
+    }
+    &__container {
+      @include lg {
+        box-sizing: border-box;
+        background: #ffffff;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 50px;
+      }
     }
   }
 }

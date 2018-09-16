@@ -1,9 +1,13 @@
 @import "../variables";
+@import "../media-queries";
 
 .page-layout {
   width: 100%;
   height: 100%;
   max-height: calc(100% - 30px);
+  @include lg {
+    background: $bg-light-gray;
+  }
   &__container {
     width: 100%;
     height: 100%;

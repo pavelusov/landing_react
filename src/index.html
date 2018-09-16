@@ -10,28 +10,30 @@
 <div id="app">
 
 <div class="top-nav">
-  <div class="site-nav site-nav--open*">
-    <div class="site-nav__toggle">Все сайты</div>
-    <div class="site-nav__list">
-      <div class="site-nav__item site-nav__item--selected">Частным клиентам</div>
-      <div class="site-nav__item">Корпоративным клиентам</div>
-      <div class="site-nav__item">Инвесторам и прессе</div>
-      <div class="site-nav__item">Интернет магазин</div>
-    </div>
-  </div>
-  <div class="region-choice region-choice--open*">
-    <div class="region-choice__toggle">Свердловская область</div>
-    <div class="region-choice__search-panel">
-      <div class="region-choice__search-panel__input-wrapper">
-        <input class="region-choice__search-panel__input" type="text" placeholder="поиск по регионам">
+  <div class="top-nav__container">
+    <div class="site-nav site-nav--open*">
+      <div class="site-nav__toggle">Все сайты</div>
+      <div class="site-nav__list">
+        <div class="site-nav__item site-nav__item--selected">Частным клиентам</div>
+        <div class="site-nav__item">Корпоративным клиентам</div>
+        <div class="site-nav__item">Инвесторам и прессе</div>
+        <div class="site-nav__item">Интернет магазин</div>
       </div>
-      <div class="region-choice__region-list">
-        <div class="region-choice__region-item">Москва и область</div>
-        <div class="region-choice__region-item">Санкт-петербург и область</div>
-        <div class="region-choice__region-item region-choice__region-item--selected">Свердловская область</div>
-        <div class="region-choice__region-item">Самарская область</div>
-        <div class="region-choice__region-item">Воронежская область</div>
-        <div class="region-choice__region-item">Челябинская область</div>
+    </div>
+    <div class="region-choice region-choice--open*">
+      <div class="region-choice__toggle">Свердловская область</div>
+      <div class="region-choice__search-panel">
+        <div class="region-choice__search-panel__input-wrapper">
+          <input class="region-choice__search-panel__input" type="text" placeholder="поиск по регионам">
+        </div>
+        <div class="region-choice__region-list">
+          <div class="region-choice__region-item">Москва и область</div>
+          <div class="region-choice__region-item">Санкт-петербург и область</div>
+          <div class="region-choice__region-item region-choice__region-item--selected">Свердловская область</div>
+          <div class="region-choice__region-item">Самарская область</div>
+          <div class="region-choice__region-item">Воронежская область</div>
+          <div class="region-choice__region-item">Челябинская область</div>
+        </div>
       </div>
     </div>
   </div>
@@ -117,12 +119,15 @@
           </div>
         </div>
         <div class="description">
-          Услуга "X" самая иксовая услуга. Заряди свой телефон иксами!
+          <div class="description__container">
+            <p>Услуга "X" самая иксовая услуга. Заряди свой телефон иксами!</p>
+          </div>
         </div>
       </div>
     </main>
     <footer class="page-layout__footer">
       <div class="footer">
+        <div class="footer__container">
         <div class="extra-nav">
           <div class="extra-nav__list">
             <div class="extra-nav__item extra-nav__item--open">
@@ -163,6 +168,7 @@
               ok
             </div>
           </div>
+        </div>
         </div>
       </div>
     </footer>
