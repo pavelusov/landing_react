@@ -10,8 +10,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // environment
 
 
-
-
 module.exports = (env, argv) => {
   const isDev = argv.mode === 'development';
   console.log('ARGV ARGV', argv.mode, isDev);
@@ -102,6 +100,11 @@ module.exports = (env, argv) => {
             reuseExistingChunk: true
           }
         }
+      }
+    },
+    resolve: {
+      alias: {
+        app_redux: path.resolve(__dirname, 'src/app/redux/')
       }
     }
   };

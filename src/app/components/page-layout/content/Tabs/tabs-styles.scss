@@ -40,8 +40,9 @@
     @include lg {
       border-left: 1px solid $bg-light-gray;
       margin: 0;
+      cursor: pointer;
       &:first-child {
-        border: none;
+        border-left: none;
       }
       &:hover {
         background: $bg-green;
