@@ -7,22 +7,24 @@ import Content from "../content/Content";
 import Footer from "../footer/Footer/";
 import Menu from "../menu/Menu";
 
+const b = require('b_').B({modSeparator: '--'}).with('page-layout');
+
 export default class PageLayout extends Component {
   render() {
     return (
-      <div className="page-layout">
-        <div className="page-layout__container">
-          <header className="page-layout__header">
+      <div className={b()}>
+        <div className={b('container')}>
+          <header className={b('header')}>
             <Menu/>
           </header>
-          <main className="page-layout__content">
+          <main className={b('content')}>
             <Content>
               <Banner/>
               <Tabs/>
               <Description/>
             </Content>
           </main>
-          <footer className="page-layout__footer">
+          <footer className={b('footer')}>
             <Footer/>
           </footer>
         </div>

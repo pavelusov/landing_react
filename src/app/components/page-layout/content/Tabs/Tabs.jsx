@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
+const b = require('b_').B({modSeparator: '--'}).with('tabs');
+
 export default class Tabs extends Component {
   render() {
     return (
-      <div className="tabs">
-        <div className="tabs__list">
-          <div className="tabs__item"><p>Телефон</p></div>
-          <div className="tabs__item"><p>Планшет</p></div>
-          <div className="tabs__item"><p>Телевизор</p></div>
-          <div className="tabs__item tabs__item--selected"><p>X</p></div>
-          <div className="tabs__item"><p>Z</p></div>
+      <div className={b()}>
+        <div className={b('list')}>
+          <div className={b('item', {selected: false})}><p>Телефон</p></div>
+          <div className={b('item', {selected: false})}><p>Планшет</p></div>
+          <div className={b('item', {selected: false})}><p>Телевизор</p></div>
+          <div className={b('item', {selected: true})}><p>X</p></div>
+          <div className={b('item', {selected: false})}><p>Z</p></div>
         </div>
       </div>
     )

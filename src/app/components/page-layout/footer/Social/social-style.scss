@@ -9,9 +9,13 @@
   }
   &__item {
     background: darken($bg-light-gray, 10%);
-    padding: 15px;
     border-radius: 50%;
     color: darken($bg-light-gray, 65%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: {
       right: 5px;
       left: 5px;

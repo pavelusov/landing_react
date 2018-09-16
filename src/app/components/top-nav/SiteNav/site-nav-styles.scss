@@ -39,7 +39,7 @@
     @include lg {
       background-color: transparent;
       color: #ffffff;
-
+      cursor: pointer;
     }
     &:hover {
       background: $bg-green;
@@ -54,5 +54,8 @@
 
       }
     }
+  }
+  &__icon {
+    margin-left: 5px;
   }
 }
