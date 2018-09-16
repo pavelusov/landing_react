@@ -1,13 +1,24 @@
 import {
-  combineReducers,
   createStore,
-  applyMiddleware
+  applyMiddleware,
+  compose
 } from "redux";
-
+import persistState from 'redux-session-manager';
 import rootReducer from "../rootReduser";
 
+const middlewares = [];
+
+const enhancer = compose(
+  applyMiddleware(...middlewares),
+  persistState({
+    name: "services-store"
+  })
+);
+
 const store = createStore(
-  combineReducers({...rootReducer})
+  rootReducer,
+  {},
+  enhancer
 );
 
 export default store;
