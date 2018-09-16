@@ -1,0 +1,38 @@
+@import "../../../../../assets/styles/variables";
+@import "../../../../../assets/styles/media-queries";
+
+.social {
+  padding: 20px 20px 0 20px;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    background: darken($bg-light-gray, 10%);
+    padding: 15px;
+    border-radius: 50%;
+    color: darken($bg-light-gray, 65%);
+    margin: {
+      right: 5px;
+      left: 5px;
+    };
+    &:hover {
+      color: #ffffff;
+    }
+    &--fb {
+      &:hover {
+        background: $social-fb;
+      }
+    }
+    &--vk {
+      &:hover {
+        background: $social-vk;
+      }
+    }
+    &--ok {
+      &:hover {
+        background: $social-ok;
+      }
+    }
+  }
+}

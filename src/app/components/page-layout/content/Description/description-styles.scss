@@ -1,0 +1,22 @@
+@import "../../../../../assets/styles/variables";
+@import "../../../../../assets/styles/media-queries";
+
+.description {
+  padding: 40px 10px;
+  background: #ffffff;
+  @include sm {
+    padding: 40px 30px;
+  }
+  @include lg {
+    background-color: $bg-light-gray;
+  }
+  &__container {
+    @include lg {
+      box-sizing: border-box;
+      background: #ffffff;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 50px;
+    }
+  }
+}
